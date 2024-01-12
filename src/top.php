@@ -20,7 +20,7 @@
       <li><a href="#">お客様の声</a></li>
       <li><a href="#">料金</a></li>
       <li><a href="#">よくある質問</a></li>
-      <li><a href="#">お問い合わせ</a></li>
+      <li><a href="#">お問い合わ</a></li>
       <div class="button_group">
              <input type="button" onclick="location.href='login.php'" value="ログイン">
               <input type="button" onclick="location.href='registration.html'" value="新規登録">

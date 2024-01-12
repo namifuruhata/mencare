@@ -222,7 +222,18 @@ header {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   padding: 0px 20px;
   position: fixed; /* ヘッダーを固定 */
-  top: 0; /* 画面の上端に配置 */
+  bottom: 0;
+  width: 100%; /* 画面幅いっぱいに広がる */
+  z-index: 1000; /* 他の要素より上に表示 */
+}
+
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 0px 20px;
+  position: fixed; /* 要素を固定 */
+  bottom: 0; /* 画面の最下部に配置 */
   width: 100%; /* 画面幅いっぱいに広がる */
   z-index: 1000; /* 他の要素より上に表示 */
 }
@@ -242,7 +253,6 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #333333;
-  /* font-weight: bold; */
 }
 
 nav ul li a:hover {
@@ -300,3 +310,52 @@ nav ul li a:hover {
     transform: translateY(-50%);
     cursor: pointer;
 }
+
+
+/*アファメーション*/
+
+/* タブボタンのスタイル */
+.tab-button {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.tab-button.active {
+    background-color: #f3f3f3;
+    color: #121212;
+}
+
+/* タブコンテンツのスタイル */
+.tabcontent {
+    background-color: #fdfdfd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* 投稿フォームのスタイル */
+.form-post {
+    margin: 20px 0;
+}
+
+.form-post label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-post textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    min-height: 100px; /* テキストエリアの最小高さ */
+}
+
+

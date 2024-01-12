@@ -1,4 +1,5 @@
 <?php
+
 // セッションがすでに開始していない場合のみ、session_start()を呼び出す
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -132,19 +133,20 @@ if (isset($_POST['action']) && $_POST['action'] == 'withdraw') {
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="mypage.php">マイページ</a></li>
-                <li><a href="main2.php">ポイント管理</a></li>
-                <li><a href="point_history.php">履歴</a></li>
-                <li><a href="#">よくある質問</a></li>
-                <li><a href="#">お問い合わせ</a></li>
-                <div class="button_group">
-                    <input type="button" onclick="location.href='top.php'" value="ログアウト">
-                </div>
-            </ul>
-        </nav>
-    </header>
+  <nav>
+    <ul>
+      <li><a href="mypage.php">マイページ</a></li>
+      <li><a href="card_registration.php">カード登録</a></li>
+      <li><a href="exchange.php">交換</a></li>
+            <li><a href="affirmations.php">アファメーション</a></li>
+      <li><a href="main2.php">ポイント管理</a></li>
+      <li><a href="%20check.php">チェック</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+      <div class="button_group">
+              <input type="button" onclick="location.href='top.php'" value="ログアウト">
+ </div>
+  </nav>
+</header>
 
     <?= $output ?>
 

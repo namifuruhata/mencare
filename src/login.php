@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['user_id'] = $row['id']; // ユーザーIDをセッションに保存
     $_SESSION['user_name'] = $row['name']; // ユーザー名をセッションに保存
     $_SESSION['user_mail'] = $mail; // メールアドレスをセッションに保存
-    header('Location: main2.php'); // main2.phpにリダイレクト
+    header('Location: main2.php'); 
     exit;
 
                 exit;
